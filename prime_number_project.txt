@@ -1,0 +1,53 @@
+
+
+
+     //// java program to check the given number is prime or not ////
+
+
+
+
+
+
+        package medium;
+        import java.util.*;
+
+
+         public class is_prime {
+
+	 public static void main(String[] args) {
+		//// initializing ////
+		int n;
+		
+		
+		
+		//// taking the integer as input ////
+		 Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number :\n");
+                 n=sc.nextInt();
+       
+        
+        
+		//// checking number is prime or not////
+	      if(check(n)) {
+	    	 System.out.println("The number "+n+" is prime");
+	      }
+	      else {
+	    	  System.out.println("The number "+n+" is not prime");
+	      }
+        	}
+	
+	
+	
+	    //// defining check method ////
+	   static public boolean check(int x ) {
+		      boolean isPrime=true;   	
+		     for(int i=2 ; i<=x/2 ; i++) {
+		    	 if(x%i==0) {
+		    		 isPrime=false;
+		    	 }
+		     }
+		     return isPrime;
+        	} 
+	
+             }
+
